@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array reverse</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+        function r(){
+            var n = prompt("enter the size of the array");
+            var a=[];
+            for(var i=0;i<n;i++){
+                a[i]=prompt("enter "+(i+1)+" element");
+            }
+            document.getElementById("original").innerHTML="the original array is "+a;
+            document.getElementById("result").innerHTML="the reverse array is "+a.reverse();
+        }
+        
+        
+        </script>
+
+    </head>
+    <body>
+        <h1 class="heading">Reverse of an Array</h1>
+        <div class="main">
+
+            <div class="part1">
+                <h1 class="enter">press start</h1>
+                <button class="button" onClick=r()>Start</button>
+                <input type="text" class="box1" id="b1">
+                <p id="original"></p>
+                <input type="text" class="box2" id="b2">
+                <h1 class="answer">Answer</h1>
+                <p id="result"></p>
+            </div>
+
+            <div class="part2">
+                <img src="girl.jpg" class="girlpic" alt="lilgirl">
+            </div>
+
+        </div>
+    </body>
+</html>
